@@ -34,7 +34,6 @@ ds_right= robot.getDevice("ds_right")
 cam= robot.getDevice("camera")
 cam.enable(timestep)
 
-#enable camera recognition
 
 
 ds_left.enable(timestep)
@@ -53,12 +52,6 @@ while (robot.step(timestep) != -1):
     prev_key = key_pressed
     key_pressed = keyboard.getKey()
     print(key_pressed)
-    
-    """ code to recognize a sassafras tree. Here, 
-    sassafras trees recognition color is green """
-    
-    
-    
 
     # when you a key, automode variables value is toggled
     if(prev_key == -1  and  key_pressed == 65):
